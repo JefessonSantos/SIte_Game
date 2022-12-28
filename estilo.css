@@ -1,0 +1,174 @@
+:root{
+    --Background: #1E1E1E;
+    --color1: #000134;
+    --color2: #023E8A;
+    --color3: ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--Background);
+}
+
+#container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--color1);
+}
+
+#image img{
+    width: 150px;
+    margin-left: 15px;
+}
+
+#Paragraf{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -30px;
+}
+
+#Paragraf p{
+    display: flex;
+    padding: 20px 0;
+}
+
+#Paragraf p:hover{
+    cursor: pointer;
+    color: #b1d3ff;
+    transition: all 300ms;
+}
+
+#conta {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+}
+
+#carro{
+    margin-right: 20px;
+}
+
+#NavNav{
+    padding: 5px 0px;
+    display: flex;
+    background-color: #023E8A;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#NavNav p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px 10px;
+    font-size: 1rem;
+}
+
+#NavNav p:hover{
+    cursor: pointer;
+    color: #b1d3ff;
+    transition: all 300ms;
+}
+
+/* Slide */
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px soilid #2065ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}

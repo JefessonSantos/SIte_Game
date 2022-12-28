@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Página de site</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <div id="container">
+        <nav id="NavBar">
+            <div id="image">
+                <img src="imagens/logo.png" alt="">
+            </div>
+            <div id="Paragraf">
+                <p onmouseover="mostrarpopup()">JOGAR</p>
+                <p onmouseover="mostrarpopup()">LOJA</p>
+                <p onmouseover="mostrarpopup()">EXPLORAR</p>
+            </div>
+            <div id="conta">
+                <a href=""><img src="imagens/user.png" alt=""></a>
+                <a href=""><img src="imagens/carrinho-carrinho.png" alt="" id="carro"></a>
+            </div>
+        </nav>
+        <nav id="NavNav">
+            <p>Promoções</p>
+            <p>Comunidade</p>
+            <p>Suporte</p>
+        </nav>
+    </div>
+
+    <div id="slider">
+        <h1>Jogo destaque:</h1>
+      <div class="slides">
+          <!--Radio Buttons-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+    
+          <!--Fim Radio-buttons-->
+  
+            <!--Slide Imagens-->
+        <div class="slide_first">
+            <img src="imagens/HOMEM ARANHA.jpg" alt="imagem1">
+        </div>
+        <div class="slide">
+            <img src="imagens/HOMEM ARANHA2.jpg" alt="imagem2">
+        </div>
+        <div class="slide">
+            <img src="imagens/HOMEM ARANHA3.jpg" alt="imagem3">
+        </div>
+        <div class="slide">
+            <img src="imagens/HOMEM ARANHA4.jpg" alt="imagem4">
+        </div>
+         </div>
+    </div>
+            <!--Fim Slide Imagens-->
+
+     <!--Nvigation auto-->
+     <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+     </div>
+
+     <div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
